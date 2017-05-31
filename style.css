@@ -49,6 +49,7 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-radius: 10px;
+	text-decoration: underline;
 }
 .languages h3:hover{
 	border: 5px solid #494E6B;
