@@ -6,8 +6,9 @@ function myQuote(){
 $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40&callback=", function(a) {
   
   quoteData = a;
-  }
-          }
+}
+});
+  
   
   var yaQue = quoteData[x]["content"];
   yaQue = yaQue.split("");
@@ -20,7 +21,7 @@ $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[
    $("#citado").html(quoteData[x]["content"]);
   $("#autor").html(quoteData[x]["title"]);
   $("#tuitera").attr("href",'https://twitter.com/intent/tweet?text='+yaQue+'See more at https://jorgerangel.ga');
-});
+
   x++;
   if(x===40){
     x = 0;
