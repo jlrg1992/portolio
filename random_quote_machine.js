@@ -1,14 +1,17 @@
 var x = 0;
 var quoteData = null;
+var lengthie = 0;
 function myQuote(){
   
   if(x===0){
 $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40&callback=", function(a) {
   
   quoteData = a;
+lengthie = quoteData.length;
+
 });
 }
-  
+ x = Math.floor(Math.random() * (lengthie));
   
   var yaQue = quoteData[x]["content"];
   yaQue = yaQue.split("");
@@ -22,9 +25,5 @@ $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[
   $("#autor").html(quoteData[x]["title"]);
   $("#tuitera").attr("href",'https://twitter.com/intent/tweet?text='+yaQue+'See more at https://jorgerangel.ga');
 
-  x++;
-  if(x===40){
-    x = 0;
-  }
   }
   myQuote();
