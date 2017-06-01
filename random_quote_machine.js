@@ -6,8 +6,8 @@ function myQuote(){
 $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=40&callback=", function(a) {
   
   quoteData = a;
-}
-  
+  }
+          }
   
   var yaQue = quoteData[x]["content"];
   yaQue = yaQue.split("");
