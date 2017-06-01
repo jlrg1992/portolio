@@ -1,0 +1,107 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Random Quote Machine</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <!--Twitter thing-->
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@JorgeRanGarc">
+  <meta name="twitter:creator" content="@JorgeRanGarc">
+<meta name="twitter:title" content="Random Quote Machine">
+  <meta name="twitter:description" content="Lacking of inspiration, check out some quotes.">
+  <meta name="twitter:image" content="https://jorgerangel.ga/jorge_rangel.jpg">
+
+
+
+
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="row header">
+      <h1 class="col-md-12">Random Quote generator</h1>
+    </div>
+    <div class="row">
+    <!--Side bar-->
+      <div class="col-md-3 left-bar">
+        <p>First of all I want to thank <a target="_blank" href="http://chriscoyier.net/">Chris Coyier</a> for making the <a target="_blank" href="https://quotesondesign.com/">quotesondesign.com API</a> which I used for this project.</p>
+        <p>For the ones interested, this API is made on Wordpress using the WordPress JSON REST API. (Notice that means it runs on PHP using MySQL as database. For the ones who critizise relational databases because it's "not cool".)</p>
+      </div>
+      <!--Quotes-->
+      <div class="col-md-9">
+        <blockquote>
+          <div id="citado" class="texto-citado"><p>"A physician is not angry at the intemperance of a mad patient, nor does he take it ill to be railed at by a man in fever. Just so should a wise man treat all mankind, as a physician does his patient, and look upon them only as sick and extravagant."</p></div>
+          <footer class="autor-citado"><span id="autor">Lucius Annaeus Seneca</span></footer>
+        </blockquote>
+        <div class="text-center">
+          <div class="col-xs-6">
+            <button onclick="myQuote()" class="btn-quote btn-block btn btn-primary btn-lg">Random Quote</button>
+          </div>
+          <div class="col-xs-6">
+            <a id="tuitera" target="_blank" href="https://twitter.com/intent/tweet?text=A physician is not angry at the intemperance of a mad patient, nor does he ... -Lucius Annaeus Seneca- See more at https://jorgerangel.ga"><button class="btn-quote btn btn-primary btn-block btn-lg">Tweet <i class="fa fa-twitter"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contacto-->
+    <div class="row section-title">
+        <div class="col-md-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="row" id="contact">
+        <div class="col-md-2"></div>
+          <form class="col-md-8" method="POST" action="https://formspree.io/jlrg1992@gmail.com">
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Your email">
+            <textarea class="form-control" name="message" placeholder="Your message"></textarea>
+            <button class="form-control btn btn-block btn-primary" type="submit">Send</button>
+            </div>
+          </form>
+      </div>
+
+
+
+
+<!--Footer-->
+    <div class="row" id="pie-de-pagina">
+    <ul id="social-icons" class="list-inline text-center">
+      <li>
+        <a target="blank" href="https://twitter.com/JorgeRanGarc">
+         <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+         </span>
+        </a>
+     </li>                  
+     <li>
+        <a target="blank" href="https://github.com/jlrg1992">
+         <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+       </a>
+      </li>
+    </ul>    
+    <p class="text-center">Written and coded by Jorge L. Rangel</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="random_quote_machine.js"></script>
+  </body>
+  </html>
