@@ -4,9 +4,12 @@ var quoteData = {
   2:["Never go to a doctor whose office plants have died.","Erma Bombeck"],
   3:["Medicine is my lawful wife and literature my mistress, when I get tired of one, I spend the night with the other.","Anton Chekhov"],
   4:["The doctor sees all the weakness of mankind, the lawyer all the wickedness, the theologian all the stupidity.","Arthur Schopenhauer"],
-  5:["Nos ganamos la vida con lo que recibimos, pero hacemos la vida con lo que damos.", "John Maxwell"]
+  5:["Nos ganamos la vida con lo que recibimos, pero hacemos la vida con lo que damos.", "John Maxwell"],
+  6:["Never offend people with style when you can offend them with substance.","Sam Brown"],
+  7:["The work you do while you procrastinate is probably the work you should be doing for the rest of your life.", "Jessica Hische"]
 };
 var keys;
+
 function myQuote(){
   
   keys = Object.keys(quoteData);
@@ -33,4 +36,3 @@ function myQuote(){
   $("#tuitera").attr("href",'https://twitter.com/intent/tweet?text='+yaQue+'See more at https://jorgerangel.ga');
   }
   myQuote();
-
