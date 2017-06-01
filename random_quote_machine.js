@@ -1,7 +1,7 @@
 function myQuote(){
   
   
-$.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=https://jorgerangel.ga/random_quote_machine.html", function(a) {
+$.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(a) {
   
   var quoteData = a;
   
