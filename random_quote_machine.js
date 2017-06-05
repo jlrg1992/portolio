@@ -1,6 +1,7 @@
 var x = 1.5;
 var quoteData = null;
 var lengthie = 0;
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 function myQuote(){
   
   if(x===1.5){
