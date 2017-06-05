@@ -8,31 +8,34 @@ var quoteData = {
   6:["Never offend people with style when you can offend them with substance.","Sam Brown"],
   7:["The work you do while you procrastinate is probably the work you should be doing for the rest of your life.", "Jessica Hische"]
 };
-var keys;
+var j = 0;
+keys = Object.keys(quoteData);
 
 function myQuote(){
   
-  keys = Object.keys(quoteData);
 
-  var j = Math.floor(Math.random() * (keys.length + 1));
-  if (j >keys.length){
-    while (j>keys.length){
-      j = Math.floor(Math.random() * (keys.length + 1));
-    }
-  }
-  
   var yaQue = quoteData[j][0];
   yaQue = yaQue.split("");
-   while(yaQue.length>75){
-    yaQue.pop();
-  }
+   
   yaQue = yaQue.join("");
   yaQue = yaQue+ "... -"+quoteData[j][1]+"- ";
  
+
+
+ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
   
   
    $("#citado").html('"'+quoteData[j][0]+'"');
+   $("#citado").addClass("flipInX").one(animationEnd, function() {
+            $(this).removeClass('flipInX');
+          });
   $("#autor").html(quoteData[j][1]);
   $("#tuitera").attr("href",'https://twitter.com/intent/tweet?text='+yaQue+'See more at https://jorgerangel.ga');
+  if(j < (keys.length - 1) ){
+  j++;
+  }
+  else{
+    j = 0;
+   }
   }
   myQuote();

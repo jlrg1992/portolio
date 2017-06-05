@@ -27,6 +27,9 @@ else{
   yaQue = yaQue+ "... -"+quoteData[x]["title"]+"- ";
 
    $("#citado").html(quoteData[x]["content"]);
+   $("#citado").addClass("flipInX").one(animationEnd, function() {
+            $(this).removeClass('flipInX');
+          });
   $("#autor").html(quoteData[x]["title"]);
   $("#tuitera").attr("href",'https://twitter.com/intent/tweet?text='+yaQue+'See more at https://jorgerangel.ga/random_quote_machine.html');
   }

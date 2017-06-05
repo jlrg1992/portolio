@@ -1,7 +1,7 @@
 .header{
 	background-color: #192231;
 	color: white;
-	padding-top: 135px;
+	padding-top: 85px;
 	padding-bottom: 75px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -9,9 +9,22 @@
 	box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
 	margin-bottom: 26px;
 }
+.header-big{
+	background-color: #192231;
+	color: white;
+	padding-top: 85px;
+	padding-bottom: 75px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
+	margin-bottom: 26px;
+	height: 100%;
+}
 #quoteMachine{
 	padding-top: 15px;
 	padding-bottom: 15px;
+	min-height: 300px;
 }
 .btn-quote{
 	margin-top: 7px;
@@ -25,8 +38,12 @@
 	height: 250px;
 	width: 250px;
 }
+#quoteTarget{
+	position: relative;
+	top: -50px;
+}
 .section-title{
-	background-color: #98878F;
+	background-color: #494E5B;
 	text-align: center;
 	color: white;
 	box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
@@ -50,8 +67,6 @@
 	text-align: justify;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	padding-right: 15vw;
-	padding-left: 10vw;
 }
 .left-bar{
 	border-right: 1px solid #BBB;
@@ -62,11 +77,70 @@ p{
 	margin-bottom: 20px;
 }
 .texto-citado{
-	font-size: 30px;
+	font-size: 20px;
 }
 .autor-citado{
-	font-size: 20px;
+	font-size: 15px;
 }
 .big-list{
 	font-size: 20px;
 }
+.img-slide{
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#portfolio-slide{
+	margin-bottom: 25px;
+	margin-top: 25px;
+	box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
+	padding:0;
+	margin-left:0;
+	margin-right:0;
+	max-width: 100%;
+}
+.carousel{
+	padding:0;
+}
+.carousel-indicators li{
+	border-color: black;
+}
+.carousel-indicators .active{
+	background-color: black;
+}
+.slider-text{
+	padding:35px;
+}
+.item-mini-portfolio{
+	margin: 5px;
+	box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.mini-portfolio-container{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mini-portfolio-container h2{
+	font-size: 25px;
+}
+#next-thing{
+	color:white;
+}
+.text-next{
+	font-size: 20px;
+	text-decoration: none;
+}
+.header-next{
+	font-size: 30px;
+}
+#next-thing:hover{
+	color: #337ab7;
+}
+@media all and (max-width:689px){
+        .img-slide{ height: 100px;}
+        .slider{ margin: 15px; }
+        .content{ padding: 10px; font-size: 18px; }
+        .slide{ padding-bottom: 8px; }
+        .carousel-inner h2{font-size: 17px;}
+    }
