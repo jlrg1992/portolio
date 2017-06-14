@@ -25,7 +25,7 @@
   </head>
   <body>
   
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="scroll-link" href='#contact'>Contact</a></li>
       </ul>
     </div>
   </div>
@@ -48,24 +48,33 @@
 
 
   <div class="container-fluid">
-    <div class="row header" style="background-image: url('old_letter_antique_keys_photo_portrait.jpg');">
-      <h1 class="col-md-12">Random Quote generator</h1>
+    <div class="row header" style=" background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('old_letter_antique_keys_photo_portrait.jpg');">
+      <h1 class="col-md-12">Random Quote Machine</h1>
     </div>
     <div class="row">
     <!--Side bar-->
       <div class="col-md-3 left-bar">
         <p>First of all I want to thank <a target="_blank" href="http://chriscoyier.net/">Chris Coyier</a> for making the <a target="_blank" href="https://quotesondesign.com/">quotesondesign.com API</a> which I used for this project.</p>
         <p>For the ones interested, this API is made on Wordpress using the WordPress JSON REST API. (Notice that means it runs on PHP using MySQL as database. For the ones who critizise relational databases because it's "not cool".)</p>
+        <p>That being said... Hope you like this and find some inspiration on it. Don't doubt on giving some feed back <a href="#contact">here</a></p>
       </div>
       <!--Quotes-->
       <div class="col-md-9">
-        <blockquote>
+        <div class="col-md-12">
+          <h2>Your quote is:</h2>
+        </div>
+        <blockquote class="content">
           <div id="citado" class="texto-citado animated"><p>"A physician is not angry at the intemperance of a mad patient, nor does he take it ill to be railed at by a man in fever. Just so should a wise man treat all mankind, as a physician does his patient, and look upon them only as sick and extravagant."</p></div>
           <footer class="autor-citado"><span id="autor">Lucius Annaeus Seneca</span></footer>
         </blockquote>
         <div class="text-center">
           <div class="col-md-6">
-            <button onclick="myQuote()" class="btn-quote btn-block btn btn-warning btn-lg">Random Quote</button>
+            <button onclick="myQuote()" class="btn-quote btn-block btn btn-warning btn-lg">Random Quote <i class="fa fa-star"></i></button>
           </div>
           <div class="col-md-6">
             <a id="tuitera" target="_blank" href="https://twitter.com/intent/tweet?text=A physician is not angry at the intemperance of a mad patient, nor does he ... -Lucius Annaeus Seneca- See more at https://jorgerangel.ga"><button class="btn-quote btn btn-primary btn-block btn-lg">Tweet <i class="fa fa-twitter"></i></button></a>
@@ -73,29 +82,31 @@
         </div>
       </div>
     </div>
+    </div>
 
-    <!--Contacto-->
-    <div class="row section-title">
+
+
+<!--Contact-->
+   <div class="container-fluid">
+      <div id="contact" class="row section-title">
         <div class="col-md-12">
-          <h2>Contact</h2>
+          <h2>Contact me</h2>
         </div>
       </div>
       <div class="row" id="contact">
         <div class="col-md-2"></div>
           <form class="col-md-8" method="POST" action="https://formspree.io/jlrg1992@gmail.com">
           <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="Your email">
-            <textarea class="form-control" name="message" placeholder="Your message"></textarea>
-            <button class="form-control btn btn-block btn-primary" type="submit">Send</button>
+            <input class="form-control input-lg" type="email" name="email" placeholder="Your email">
+            <textarea class="form-control input-lg" rows="8" name="message" placeholder="Your message"></textarea>
+            <button class="form-control btn btn-block btn-primary btn-lg input-lg" type="submit">Send</button>
             </div>
           </form>
       </div>
 
-
-
-
 <!--Footer-->
-    <div class="row" id="pie-de-pagina">
+
+        <div class="row" id="pie-de-pagina">
     <ul id="social-icons" class="list-inline text-center">
       <li>
         <a target="blank" href="https://twitter.com/JorgeRanGarc">
@@ -116,9 +127,7 @@
     </ul>    
     <p class="text-center">Written and coded by Jorge L. Rangel</p>
     </div>
-  </div>
-
-
+    </div>
 
 
 
