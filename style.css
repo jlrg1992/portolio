@@ -14,7 +14,10 @@
 	font-size: 18px;
 	margin-bottom: 20px;
 	overflow: hidden;
+}
+.article ol, .article p, .article ul{
 	text-align: justify;
+	margin-bottom: 30px;
 }
 .cita{
 	font-size: 11px;
