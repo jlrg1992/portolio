@@ -13,6 +13,7 @@
 .article{
 	font-size: 18px;
 	margin-bottom: 20px;
+	overflow: none;
 }
 .cita{
 	font-size: 11px;
