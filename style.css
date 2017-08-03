@@ -14,9 +14,11 @@
 	font-size: 18px;
 	margin-bottom: 20px;
 	overflow: none;
+	text-align: justify;
 }
 .cita{
 	font-size: 11px;
+	letter-spacing: 3px;
 }
 .header-big{
 	background-color: #192231;
