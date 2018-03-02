@@ -4,7 +4,7 @@
 var express = require('express'),
   app = express(),
   path = require('path'),
-  port = Number(process.env.PORT || 8080);
+  port = Number(process.env.PORT || 80);
 
 // ROUTES
 // ===============================================
