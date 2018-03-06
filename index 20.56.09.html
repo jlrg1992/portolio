@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jorge L. Rangel</title>
+    <link rel="shortcut icon" type="image/jpg" href="jorge_rangel.jpg">
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+    
+    <!--Twitter thing-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@JorgeRanGarc">
+  <meta name="twitter:creator" content="@JorgeRanGarc">
+  <meta name="twitter:title" content="Jorge L. Rangel">
+  <meta name="twitter:description" content="I taught myself to code, the same way I learned to swim: by doing it.">
+  <meta name="twitter:image" content="https://jorgerangel.ga/jorge_rangel.jpg">
+
+
+  </head>
+  <body>
+    
+   <!--Navbar-->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Jorge L. Rangel</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="scroll-link" href='#contact'>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!--Header-->
+    <div id="header" class="container-fluid header-big" style="background-image: url('dark_night_sky.jpg');">
+
+      <div class="row animated bounceInDown">
+        <div class="col-md-12 text-center">
+          <img id="profilepic" src="jorge_rangel.jpg">
+        </div>
+        <div class="col-md-12 text-center">
+          <h1>Jorge L. Rangel</h1>
+          <h2>Estudiante de medicina</h2>
+          <h3>"La verdad os hará libres"</h3>
+        </div>
+      </div>
+      <a id="next-thing" class="row scroll-link" href='#quoteTarget'>
+        <div class="col-md-12 text-center text-next">
+          <span>Siguiente</span>
+        </div>
+        <div class="col-md-12 text-center header-next">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+      </a>
+    </div>
+<div id="quoteTarget">
+</div>
+    <div id="quoteMachine" class="container">
+
+      <div class="row">
+      <div class="col-md-6">
+        <h2 class="col-md-12">My favorite Quotes</h2>
+        <blockquote class="col-md-12">
+          <p id="citado" class="animated">"A physician is not angry at the intemperance of a mad patient, nor does he take it ill to be railed at by a man in fever. Just so should a wise man treat all mankind, as a physician does his patient, and look upon them only as sick and extravagant."</p>
+          <footer><span id="autor">Lucius Annaeus Seneca</span></footer>
+        </blockquote>
+        </div>
+        <div class="col-md-6">
+        <div class="col-md-6 text-center">
+          <button onclick="myQuote()" class="btn-quote btn btn-warning btn-block btn-lg">Next Quote <i class="fa fa-star"></i></button>
+        </div>
+        <div class="col-md-6 text-center">
+          <a id="tuitera" target="_blank"><button class="btn-quote btn btn-primary btn-block btn-lg">Tweet <i class="fa fa-twitter"></i></button></a>
+        </div>
+        <div class="col-md-12 text-center">
+          <a href="random_quote_machine.html" class="btn-quote btn btn-default btn-block btn-lg">More Quotes!</a>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--About me-->
+    <div class="container-fluid">
+    <div id="about" class="row header" style="background-image: url('queretaro_santa_rosa_viterbo.jpg');">
+      <div class="col-md-12">
+          <h1>About me</h1>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 content">
+        <p>I'm 25 years old. I was born in Mexico City but I've been living in Queretaro for 19 years now. I'm studying medicine in Universidad Anáhuac Querétaro, but I started coding since 2015.</p>
+        <p>However I have 5 years of experience working with Wordpress and CSS (there's not such thing as a perfect Theme). I worked in <a target="_blank" href="http://radarnews.mx/">RadarNews</a> in 2015 but I had to quit because of my studies.</p>
+        <p>Eventough it hasn't been easy learning to code, now I can handle 5 programing languages (HTML, CSS, JS, PHP and MySQL) and have already made my first steps into mobile apps with PhoneGap.</p>
+        <p>At the time I have some personal side projects (a set of study tools), but I'm really interested in working with others, specialy if it will give me more experience with BackEnd development.</p>
+      </div>
+    </div>
+  </div>
+
+<!--Portfolio-->
+  <div class="container-fluid">
+    <div class="row section-title">
+      <div class="col-md-12">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+  </div>
+
+<!--Slider-->
+  <div id="portfolio-slide" class="slider carousel slide container-fluid hidden-xs" data-ride="carousel" data-interval="3000">
+
+
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-slide" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-slide" data-slide-to="1"></li>
+  </ol>
+
+
+
+  <div class="carousel-inner">
+
+
+    <div class="row item active">
+      <div class="col-md-5 img-slide" style="background-image: url('tiroides.jpg');">
+      </div>
+      <div class="col-md-7 slider-text">
+        <a href=biosintesis_hormonas_tiroideas.html><h2>Biosíntesis Hormonas Tiroideas</h2></a>
+        <div class="content">
+          <p>Presentación acerca de la biosíntesis de hormonas tiroideas. No te la pierdas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row item">
+      <div class="col-md-5 img-slide" style="background-image: url('tyrion-lannister-1024.jpg')">
+      </div>
+      <div class="col-md-7 slider-text">
+        <a href="acondroplasia.html"><h2>Acondroplasia | Genética</h2></a>
+        <div class="content">
+          <p>La acondroplasia (MIM 100800) es la causa más frecuente de enanismo en los seres humanos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row item">
+      <div class="col-md-5 img-slide" style="background-image: url('beckwith_wiedemann.jpg')">
+      </div>
+      <div class="col-md-7 slider-text">
+        <a href="beckwith_wiedemann.html"><h2>Síndrome de Beckwith Wiedemann | Genética</h2></a>
+        <div class="content">
+          <p>El síndrome de Beckwith-Wiedemann (MIM 130650) es un desequilibrio en el imprinting en la región p15 del cromosoma 11.</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#portfolio-slide" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#portfolio-slide" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+
+
+  </div>
+
+  <!--Tiny Portfolio-->
+  <div class="container mini-portfolio-container hidden-md hidden-lg hidden-sm">
+    <div class="row item-mini-portfolio"><a href=biosintesis_hormonas_tiroideas.html>
+      <div class="col-xs-4 img-slide" style="background-image: url('tiroides.jpg');">
+      </div>
+      <div class="col-xs-8">
+        <h2>Hormonas tiroideas</h2>
+      </div></a>
+    </div>
+
+    <div class="row item-mini-portfolio"><a href=acondroplasia.html>
+      <div class="col-xs-4 img-slide" style="background-image: url('https://jorgerangel.ga/tyrion-lannister-1024.jpg');">
+      </div>
+      <div class="col-xs-8">
+        <h2>Acondroplasia</h2>
+      </div></a>
+    </div>
+    <div class="row item-mini-portfolio"><a href="beckwith_wiedemann.html">
+      <div class="col-xs-4 img-slide" style="background-image: url('beckwith_wiedemann.jpg');">
+      </div>
+      <div class="col-xs-8">
+        <h2>Beckwith-Wiedemann</h2>
+      </div></a>
+    </div>
+  </div>
+ 
+
+        <!--Contacto-->
+
+    <div class="container-fluid">
+      <div id="contact" class="row section-title">
+        <div class="col-md-12">
+          <h2>Contact me</h2>
+        </div>
+      </div>
+      <div class="row" id="contact">
+        <div class="col-md-2"></div>
+          <form class="col-md-8" method="POST" action="https://formspree.io/jlrg1992@gmail.com">
+          <div class="form-group">
+            <input class="form-control input-lg" type="email" name="email" placeholder="Your email">
+            <textarea class="form-control input-lg" rows="8" name="message" placeholder="Your message"></textarea>
+            <button class="form-control btn btn-block btn-primary btn-lg input-lg" type="submit">Send</button>
+            </div>
+          </form>
+      </div>
+
+<!--Footer-->
+
+        <div class="row" id="pie-de-pagina">
+    <ul id="social-icons" class="list-inline text-center">
+      <li>
+        <a target="blank" href="https://twitter.com/JorgeRanGarc">
+         <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+         </span>
+        </a>
+     </li>                  
+     <li>
+        <a target="blank" href="https://github.com/jlrg1992">
+         <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+       </a>
+      </li>
+    </ul>    
+    <p class="text-center">Written and coded by Jorge L. Rangel</p>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="general-script.js"></script>
+    <script src="random_quote_machine.js"></script>
+    
+  </body>
+</html>
