@@ -20,7 +20,7 @@ var body = $("body");
 
    $(window).scroll(function(){
 
-    var anchito = $("body").width();
+    var anchito = body.width();
 
     if(anchito>768){
 
